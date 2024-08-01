@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Coope del Ferreyra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="/Users/Laura/Desktop/Coope/Web/Css/styles.css">
+    <link rel="shortcut icon" href="images/favicom.ico" type="image/x-icon">
+    
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logopeq.jpg" alt="Logo">
+                </a>
+            </div>
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="quienessomos.html" target="_blank">¿Quiénes somos?</a></li>
+                <li class="listaItem"><a class="linkNav" href="./pages/registrarse.html">Registrarse</a></li>
+                <li class="listaItem"><a class="linkNav iniciarSesion" href="./pages/iniciosesion.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section id="presentacion">
+            <h1> <span class="half1">La Coope </span><span class="half2">del Ferreyra</span></h1>
+            <h2>Cooperadora "Lucas Kraglievich" de la Escuela N° 16 DE 7° "Andrés Ferreyra"</h2>
+            <br>
+        </section>
+
+        <section class="cursos">
+            <div class="curso" id="pintura">
+                <a href="pintura.html" target="_blank">
+                    <h3>Eventos</h3>
+                <p>El encuentro con el otro como eje central.</p></a>
+            </div>
+            <div class="curso" id="escultura">
+                <a href="escultura.html" target="_blank">
+                <h3>Proyectos</h3>
+                <p>Pensando en lxs chicxs.</p></a>
+            </div>
+            <div class="curso" id="fotografia">
+                <a href="fotografia.html" target="_blank">
+                <h3>¿Cómo me puedo sumar?</h3>
+                <p>Sumate a colaborar!.</p></a>
+            </div>
+        </section>
+
+        <section id="formulario">
+            <div class="cuadros-flex">
+                <div class="cuadro-item">
+                    <h2>Contactanos</h2>
+                    <form id="miFormulario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" class="ingreso_de_datos">
+                        
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" class="ingreso_de_datos">
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="ingreso_de_datos" placeholder="email@dominio.com">
+                        
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" class="ingreso_de_datos" placeholder="xxxxxxxx">
+                        
+                        <label for="name">¿Cómo preferís recibir respuesta?:</label>
+                        <input type="checkbox" name="option" value="1">Por mail
+                        <input type="checkbox" name="option" value="2">Por teléfono
+
+                        <label for="comment">Consulta:</label>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="comment" rows="10" cols="60" placeholder="Escribe tu consulta..."></textarea><br>
+                        
+                        <button type="submit" value="Enviar Formulario" class="enviar">Enviar</button>
+                    </form>
+                </div>
+                <div class="cuadro-item">
+                    <h3>Nuestra ubicación</h3>
+                    <p>¿Dónde nos encontras? Estamos en Apolinario Figueroa 661, en el barrio de Villa Crespo.</p>
+                    <div class="ubicacionEnElMapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9129131857835!2d-58.448783!3d-34.6063636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0fd300e50b%3A0xdea6b8eca7dfd159!2sCnel.%20Apolinario%20Figueroa%20661%2C%20Villa%20Crespo%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1720752252795!5m2!1ses-419!2sar" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="tyc.html" target="_blank">Términos y condiciones</a></li>
+                <li class="listaItem"><a class="linkNav" href="preguntas.html" target="_blank">Preguntas frecuentes</a></li>
+                <li class="listaItem"><a class="linkNav" href="ayuda.html" target="_blank">Ayuda</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
